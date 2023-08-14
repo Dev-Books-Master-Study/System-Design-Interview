@@ -18,18 +18,19 @@
 
 ## 🙋🏻 참여자
 
-- 총 3명
-  - 김하린
-  - 백한결
-  - 유건
-  - 유희진
-  - 이상민
-  - 정윤호
+- 총 7명
+  - [김하린](https://github.com/kimhalin)
+  - [백한결](https://github.com/baekhangyeol)
+  - [박수연](https://github.com/PARK-Su-yeon)
+  - [유건](https://github.com/youKeon)
+  - [유희진](https://github.com/yu-heejin)
+  - [이상민](https://github.com/sangminlee98)
+  - [정윤호](https://github.com/yunhobb)
 
 <br>
 
 ## 🗂️ 발표 자료
 
-| 챕터            | 발표자   | 발표 자료 |
-|---------|-----------------|-------|
-| 1장 | [유건](https://github.com/youKeon)| [DBMS 아키텍처](https://github.com/Dev-Books-Master-Study/Study-Guide/blob/main/01%EC%9E%A5/1%EC%9E%A5_DBMS%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98_%EC%9C%A0%EA%B1%B4.md)  
+| 챕터     | 발표자   | 발표 자료 |
+|--------|-----------------|-------|
+|  | |   
