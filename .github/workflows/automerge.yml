@@ -1,7 +1,7 @@
 name: automerge
 on:
   schedule:
-    - cron: '43 13 * * 3' 
+    - cron: '* * * * *'
 jobs:
   automerge:
     runs-on: ubuntu-latest
