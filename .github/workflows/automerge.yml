@@ -1,7 +1,6 @@
 name: automerge
 on:
-  schedule:
-    - cron: '* * * * *'
+  pull_request
     
 jobs:
   automerge:
