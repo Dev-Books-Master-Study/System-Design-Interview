@@ -1,13 +1,9 @@
 name: automerge
 on:
-  workflow_dispatch:
-# on:
-#   schedule:
-#     - cron: '* * * * *'
-
+  schedule:
+    - cron: '0 0 * * 1'
 jobs:
   automerge:
-    permissions: write-all
     runs-on: ubuntu-latest
     steps:
       - name: automerge
