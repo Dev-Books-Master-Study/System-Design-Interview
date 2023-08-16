@@ -1,7 +1,10 @@
 name: automerge
 on:
-  schedule:
-    - cron: '* * * * *'
+  workflow_dispatch:
+# on:
+#   schedule:
+#     - cron: '* * * * *'
+
 jobs:
   automerge:
     permissions: write-all
