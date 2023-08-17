@@ -58,7 +58,7 @@ REST API 형태로 설계하여 서버와 클라이언트가 통신하도록 설
 
 ### URL 리다이렉션
 
-![IMG_D04C85CEE975-1.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6c556947-99b3-4df0-b86d-2710346a312b/IMG_D04C85CEE975-1.jpeg)
+![IMG_D04C85CEE975-1](https://github.com/sangminlee98/system-design-interview/assets/83197138/b159f13e-c653-4c61-a6dd-f20ad2e98d73)
 
 301 vs 302 ?
 
@@ -84,7 +84,7 @@ URL 리다이렉션을 구현하는 가장 직관적인 방법 ⇒ `해시 테�
 
 결국 중요한 것은 원래의 **긴 URL을 해시 값으로 대응시킬 해시 함수**를 찾는 것!
 
-![IMG_792E06EFB256-1.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2364bb0b-0001-4185-baf3-a0bb85d57bc8/IMG_792E06EFB256-1.jpeg)
+![IMG_792E06EFB256-1](https://github.com/sangminlee98/system-design-interview/assets/83197138/87615db8-c6a7-47b2-87e6-8b98d226543a)
 
 해당 함수는 아래와 같은 요구사항을 만족해야 함.
 
@@ -101,7 +101,7 @@ URL 리다이렉션을 구현하는 가장 직관적인 방법 ⇒ `해시 테�
 
 💡 SOLUTION ⇒ **<단축 URL, 원래 URL>의 순서쌍을 관계형 데이터베이스에 저장하는 것**
 
-![IMG_2558AFFA3516-1.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e637df06-be7b-489c-8ecf-e82ea9e65a2c/IMG_2558AFFA3516-1.jpeg)
+![IMG_2558AFFA3516-1](https://github.com/sangminlee98/system-design-interview/assets/83197138/d7917b4c-82d2-4264-ba4d-7177d4f8e314)
 
 ### 해시 함수
 
@@ -136,7 +136,7 @@ n의 최솟값은 7이 되므로 hashValue의 길이는 7이 되어야 한다.
 
 실제로 충돌이 발생했을 때, 충돌이 해소될 때 까지 사전에 정한 `문자열을 해시값에 덧붙인다`
 
-![IMG_72C4115F015E-1.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bd16a503-a9c9-4d2a-bdf7-d26f59a122bd/IMG_72C4115F015E-1.jpeg)
+![IMG_72C4115F015E-1](https://github.com/sangminlee98/system-design-interview/assets/83197138/21e60f25-0a05-41ef-8384-ebe03f2fb5b0)
 
 → 한 번 이상 데이터베이스 질의를 해야 하므로 **오버헤드가 크다**.
 
@@ -165,7 +165,7 @@ hashValue에 사용할 수 있는 문자가 62개이므로 62진법을 사용
 
 처리 흐름 순서도
 
-![IMG_4F286ECCED28-1.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bf6ba674-b166-42e0-91b5-d535338d4a10/IMG_4F286ECCED28-1.jpeg)
+![IMG_4F286ECCED28-1](https://github.com/sangminlee98/system-design-interview/assets/83197138/8224a57a-6655-46eb-a06b-3b6b02146e2c)
 
 - 입력된 URL이 https://en.wikipedia.org/wiki/Systems_design이라고 하면
 - 이 URL에 대해 ID 생성기가 반환한 ID는 2009215674938이다.
@@ -177,7 +177,7 @@ hashValue에 사용할 수 있는 문자가 62개이므로 62진법을 사용
 
 ### URL 리다이렉션 상세 설계
 
-![IMG_332D419528BC-1.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/602548a4-a2fc-4d11-91b1-2763b5fdbcd6/IMG_332D419528BC-1.jpeg)
+![IMG_332D419528BC-1](https://github.com/sangminlee98/system-design-interview/assets/83197138/12c7f7ab-a3c4-4922-8077-3d4d478888ab)
 
 쓰기보다 읽기를 더 자주 하는 시스템이므로 **<단축 URL, 원래 URL>의 쌍을 캐시에 저장**하여 성능을 높인다.
 
