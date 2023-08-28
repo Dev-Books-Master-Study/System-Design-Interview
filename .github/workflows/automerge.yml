@@ -5,6 +5,7 @@ on:
       - labeled
 
 jobs:
+
   automerge:
     runs-on: ubuntu-latest
     steps:
